@@ -2,12 +2,17 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Hospital Management System</title>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="style.css">
+    <title>HealthCare Hospital</title>
+
+    <link rel="stylesheet"
+          href="style.css">
+
 </head>
 
 <body>
@@ -16,13 +21,11 @@
 
     <header>
 
-        <div class="logo">
-            City Hospital
-        </div>
+        <h1>HealthCare Hospital</h1>
 
         <nav>
 
-            <a href="#">Home</a>
+            <a href="#home">Home</a>
 
             <a href="#about">About</a>
 
@@ -30,7 +33,7 @@
 
             <a href="#doctors">Doctors</a>
 
-            <a href="#appointment">Appointment</a>
+            <a href="#register">Register</a>
 
             <a href="#contact">Contact</a>
 
@@ -39,20 +42,33 @@
     </header>
 
 
-    <!-- Hero Section -->
+    <!-- Hero -->
 
-    <section class="hero">
+    <section id="home" class="hero">
 
-        <h1>Your Health Is Our Priority</h1>
+        <div>
 
-        <p>24/7 Quality Healthcare Services</p>
+            <h2>Your Health Is Our Priority</h2>
 
-        <button>Book Appointment</button>
+            <p>
 
+                Providing quality healthcare with experienced doctors.
+
+            </p>
+
+            <a href="#register">
+
+                Book Appointment
+
+            </a>
+
+        </div>
+
+        
     </section>
 
 
-    <!-- About Section -->
+    <!-- About -->
 
     <section id="about">
 
@@ -60,14 +76,20 @@
 
         <p>
 
-            City Hospital provides excellent healthcare services with modern technology and experienced doctors.
+            HealthCare Hospital provides modern medical services.
+
+        </p>
+
+        <p>
+
+            We focus on patient care and advanced treatment.
 
         </p>
 
     </section>
 
 
-    <!-- Services -->
+    <!-- Services Grid -->
 
     <section id="services">
 
@@ -76,27 +98,39 @@
         <div class="service-grid">
 
             <div class="card">
-                Emergency
+
+                Emergency Care
+
             </div>
 
             <div class="card">
-                Laboratory
+
+                Cardiology
+
             </div>
 
             <div class="card">
+
+                Neurology
+
+            </div>
+
+            <div class="card">
+
+                Pediatrics
+
+            </div>
+
+            <div class="card">
+
                 Pharmacy
+
             </div>
 
             <div class="card">
-                X-Ray
-            </div>
 
-            <div class="card">
-                ICU
-            </div>
+                Laboratory
 
-            <div class="card">
-                Ambulance
             </div>
 
         </div>
@@ -104,13 +138,13 @@
     </section>
 
 
-    <!-- Doctors -->
+    <!-- Doctors Flexbox -->
 
     <section id="doctors">
 
         <h2>Our Doctors</h2>
 
-        <div class="doctor-grid">
+        <div class="doctor-container">
 
             <div class="doctor">
 
@@ -124,7 +158,7 @@
 
                 <h3>Dr. Sarah</h3>
 
-                <p>Dermatologist</p>
+                <p>Neurologist</p>
 
             </div>
 
@@ -132,7 +166,7 @@
 
                 <h3>Dr. David</h3>
 
-                <p>Neurologist</p>
+                <p>Pediatrician</p>
 
             </div>
 
@@ -147,36 +181,50 @@
 
         <h2>Departments</h2>
 
-        <ul class="departments">
+        <ul>
 
             <li>Cardiology</li>
 
             <li>Neurology</li>
 
-            <li>Orthopedics</li>
-
             <li>Pediatrics</li>
 
             <li>Radiology</li>
+
+            <li>Orthopedics</li>
 
         </ul>
 
     </section>
 
 
-    <!-- Appointment -->
+    <!-- Registration Form -->
 
-    <section id="appointment">
+    <section id="register">
 
-        <h2>Book Appointment</h2>
+        <h2>Patient Registration</h2>
 
         <form>
 
-            <input type="text" placeholder="Full Name">
+            <label>Full Name</label>
 
-            <input type="email" placeholder="Email">
+            <input type="text"
+                   required>
 
-            <input type="date">
+            <label>Email</label>
+
+            <input type="email"
+                   required>
+
+            <label>Phone</label>
+
+            <input type="tel"
+                   required>
+
+            <label>Appointment Date</label>
+
+            <input type="date"
+                   required>
 
             <button type="submit">
 
@@ -189,7 +237,7 @@
     </section>
 
 
-    <!-- Patient Records -->
+    <!-- Table -->
 
     <section>
 
@@ -242,27 +290,6 @@
     </section>
 
 
-    <!-- Testimonials -->
-
-    <section>
-
-        <h2>Testimonials</h2>
-
-        <div class="testimonial">
-
-            "Excellent doctors and friendly staff."
-
-        </div>
-
-        <div class="testimonial">
-
-            "Very clean and professional hospital."
-
-        </div>
-
-    </section>
-
-
     <!-- Contact -->
 
     <section id="contact">
@@ -273,7 +300,13 @@
 
         <p>📞 +977 9800000000</p>
 
-        <p>✉️ cityhospital@gmail.com</p>
+        <p>✉️ healthcare@gmail.com</p>
+
+        <a href="https://www.google.com">
+
+            Visit Google
+
+        </a>
 
     </section>
 
@@ -284,7 +317,7 @@
 
         <p>
 
-            © 2026 City Hospital. All Rights Reserved.
+            © 2026 HealthCare Hospital
 
         </p>
 
