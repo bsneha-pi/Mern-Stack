@@ -1,0 +1,247 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial,sans-serif;
+    line-height:1.6;
+}
+
+/* Header */
+
+header{
+    background:#0077b6;
+    color:white;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:15px 40px;
+}
+
+nav a{
+    color:white;
+
+    text-decoration:none;
+
+    margin-left:20px;
+}
+
+nav a:hover{
+    color:yellow;
+}
+
+/* Hero */
+
+.hero{
+    text-align:center;
+
+    padding:100px 20px;
+
+    background:#caf0f8;
+}
+
+.hero button{
+
+    margin-top:20px;
+
+    padding:10px 20px;
+
+    border:none;
+
+    background:#0077b6;
+
+    color:white;
+
+    cursor:pointer;
+}
+
+/* General Section */
+
+section{
+    padding:50px;
+}
+
+h2{
+    text-align:center;
+
+    margin-bottom:30px;
+}
+
+/* Services */
+
+.service-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:20px;
+}
+
+.card{
+
+    background:#f1f1f1;
+
+    padding:30px;
+
+    text-align:center;
+
+    border-radius:10px;
+}
+
+/* Doctors */
+
+.doctor-grid{
+
+    display:flex;
+
+    gap:20px;
+}
+
+.doctor{
+
+    flex:1;
+
+    background:#f1f1f1;
+
+    padding:20px;
+
+    text-align:center;
+
+    border-radius:10px;
+}
+
+/* Departments */
+
+.departments{
+
+    width:250px;
+
+    margin:auto;
+}
+
+.departments li{
+
+    padding:10px;
+}
+
+/* Form */
+
+form{
+
+    width:350px;
+
+    margin:auto;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+}
+
+input{
+
+    padding:10px;
+}
+
+form button{
+
+    padding:10px;
+
+    background:#0077b6;
+
+    color:white;
+
+    border:none;
+}
+
+/* Table */
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+}
+
+table,th,td{
+
+    border:1px solid black;
+}
+
+th,td{
+
+    padding:12px;
+
+    text-align:center;
+}
+
+/* Testimonials */
+
+.testimonial{
+
+    background:#f1f1f1;
+
+    margin:15px;
+
+    padding:20px;
+
+    border-radius:10px;
+}
+
+/* Contact */
+
+#contact{
+
+    text-align:center;
+}
+
+/* Footer */
+
+footer{
+
+    background:#0077b6;
+
+    color:white;
+
+    text-align:center;
+
+    padding:20px;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    header{
+
+        flex-direction:column;
+    }
+
+    nav{
+
+        margin-top:15px;
+    }
+
+    .service-grid{
+
+        grid-template-columns:1fr;
+    }
+
+    .doctor-grid{
+
+        flex-direction:column;
+    }
+
+    form{
+
+        width:100%;
+    }
+}
